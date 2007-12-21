@@ -10,6 +10,7 @@ Group:		System/Configuration/Other
 URL:		http://gnome-schedule.sourceforge.net/
 Source:		http://prdownloads.sourceforge.net/gnome-schedule/%{name}-%{version}.tar.bz2
 Patch0:		gnome-schedule-1.1.0_fix_documentation_build.patch
+Buildroot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires:	pygtk2.0-devel
 BuildRequires:	yelp
 BuildRequires:	at
