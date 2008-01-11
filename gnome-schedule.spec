@@ -62,18 +62,6 @@ rm -rf %{buildroot}
 rm -rf $RPM_BUILD_ROOT %name.lang
 %makeinstall_std
 
-mkdir -p %{buildroot}%{_menudir}
-cat << _EOF_ > %{buildroot}%{_menudir}/%{name}
-?package(%{name}): \
- command="%{_bindir}/%{name}" \
- icon="gnome-schedule.png" \
- longtitle="Manage crontab and at jobs" \
- needs="x11" \
- section="System/Configuration/Other" \
- title="GNOME Schedule" \
- startup_notify="yes" \
- xdg="true"
-_EOF_
 
 desktop-file-install --vendor="" \
   --remove-category="Application" \
@@ -104,7 +92,6 @@ rm -rf %{buildroot}
 %{_datadir}/%{name}
 %{_datadir}/applications/*.desktop
 %{_datadir}/pixmaps/*
-%{_menudir}/%{name}
 %{_libdir}/bonobo/servers/GNOME_GnomeSchedule.server
 %{_datadir}/omf/%name/*.omf
 
