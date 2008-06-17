@@ -1,5 +1,5 @@
 %define	version	1.1.0
-%define release	%mkrel 1
+%define release	%mkrel 2
 
 Summary:	Managing cron job or at job using GUI
 Name:		gnome-schedule
@@ -15,7 +15,7 @@ BuildRequires:	pygtk2.0-devel
 BuildRequires:	yelp
 BuildRequires:	at
 BuildRequires:	desktop-file-utils
-BuildRequires:  pygtk2.0-libglade gnome-python gnome-python-gconf libxslt-proc
+BuildRequires:  pygtk2.0-libglade gnome-python-devel gnome-python-gconf libxslt-proc
 BuildRequires:  gnome-common intltool
 Requires:	at
 Requires:	pygtk2.0-libglade
