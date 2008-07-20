@@ -1,5 +1,5 @@
-%define	version	1.1.0
-%define release	%mkrel 2
+%define	version	2.0.2
+%define release	%mkrel 1
 
 Summary:	Managing cron job or at job using GUI
 Name:		gnome-schedule
@@ -8,7 +8,7 @@ Release:	%{release}
 License:	GPL
 Group:		System/Configuration/Other
 URL:		http://gnome-schedule.sourceforge.net/
-Source:		http://prdownloads.sourceforge.net/gnome-schedule/%{name}-%{version}.tar.bz2
+Source:		http://prdownloads.sourceforge.net/gnome-schedule/%{name}-%{version}.tar.gz
 Patch0:		gnome-schedule-1.1.0_fix_documentation_build.patch
 Buildroot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires:	pygtk2.0-devel
@@ -47,8 +47,6 @@ GNOME bugzilla (bugzilla.gnome.org).
 
 %prep
 %setup -q
-
-%patch0 -p1 -b .gnomedoc
 
 %build
 #gnome-doc-prepare --force; aclocal; autoconf; automake
@@ -97,6 +95,4 @@ rm -rf %{buildroot}
 %{_datadir}/applications/*.desktop
 %{_datadir}/pixmaps/*
 %{_libdir}/bonobo/servers/GNOME_GnomeSchedule.server
-%{_datadir}/omf/%name/*.omf
-
-
+%{_datadir}/omf/%name/gnome-schedule-C.omf
