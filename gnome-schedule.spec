@@ -1,4 +1,4 @@
-%define	version	2.0.2
+%define	version	2.1.0
 %define release	%mkrel 1
 
 Summary:	Managing cron job or at job using GUI
