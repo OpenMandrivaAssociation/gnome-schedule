@@ -1,5 +1,5 @@
 %define	version	2.1.1
-%define release	%mkrel 1
+%define release	%mkrel 2
 
 Summary:	Managing cron job or at job using GUI
 Name:		gnome-schedule
