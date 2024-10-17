@@ -7,7 +7,7 @@ Version:	%{version}
 Release:	%{release}
 License:	GPL
 Group:		System/Configuration/Other
-URL:		http://gnome-schedule.sourceforge.net/
+URL:		https://gnome-schedule.sourceforge.net/
 Source:		http://prdownloads.sourceforge.net/gnome-schedule/%{name}-%{version}.tar.gz
 Patch0:		gnome-schedule-1.1.0_fix_documentation_build.patch
 Buildroot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
